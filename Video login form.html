@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+ <style>
+        body {
+            font-size: 16px;
+            color: #222;
+            font-weight: 300;
+            backdrop-filter: blur(10px);
+            background-size: cover;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+        }
+
+        #bg-video {
+            position: fixed;
+            top: 40%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+            transform: translateX(-50%) translateY(-50%);
+            background-size: cover;
+            transition: 1s opacity;
+        }
+
+        #login-box {
+            position: relative;
+            margin: 5% auto;
+            width: 600px;
+            margin-top: 60px;
+            margin-left: 80px;
+            height: 400px;
+            border-radius: 2px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .left {
+            position: absolute;
+            box-sizing: border-box;
+            padding: 40px;
+            width: 300px;
+            height: 400px;
+        }
+
+        #h1 {
+            margin: 0 0 20px 0;
+            font-weight: 300;
+            font-size: 20px;
+            color: white;
+        }
+
+        input[type="text"], 
+        input[type="password"] {
+            display: block;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            padding: 4px;
+            width: 220px;
+            height: 32px;
+            border: none;
+            border-bottom: 1px solid #AAA;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            font-size: 15px;
+        }
+
+        .or {
+            position: absolute;
+            top: 100px;
+            left: 275px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #DDD;
+            line-height: 40px;
+            text-align: center;
+            line-height: 40px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+
+        }
+
+        .right {
+            position: absolute;
+            top: 0;
+            right: 0;
+            box-sizing: border-box;
+            padding: 40px;
+            width: 300px;
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 0 2px 2px 0;
+        }
+
+        .right .loginwith {
+            display: block;
+            margin-bottom: 40px;
+            font-size: 20px;
+            color: #fff;
+            font-weight: 500;
+        }
+
+        button.social-signin.facebook {
+            background: #32508E;
+        }
+
+        button.social-signin.google {
+            background: #DD4B39;
+        }
+
+        button.social-signin {
+            margin-bottom: 20px;
+            width: 220px;
+            height: 36px;
+            border: none;
+            border-radius: 2px;
+            color: #FFF;
+            font-weight: 500;
+        }
+
+        #Login {
+            margin-top: 20px;
+            width: 120px;
+            height: 32px;
+            background: #4cf332b5;
+            border: none;
+            border-radius: 2px;
+            color: #0e0d0d;
+            font-weight: 500;
+        }
+    </style>
+</head>
+  <video id="bg-video" autoplay muted loop>
+
+    <!-- Replace VIDEO_PATH with your video path -->
+     
+  <source src="VIDEO_PATH" type="video/mp4"> 
+</video>
+
+   
+<body>
+<div id="login-box">
+  <div class="left">
+    <h1 id="h1">Login</h1>
+    
+    <input type="text" name="username" placeholder="Username" />
+    <input type="text" name="email" placeholder="E-mail" />
+    <input type="password" name="password" placeholder="Password" />
+    <input type="password" name="password2" placeholder="Retype password" />
+    
+    <input type="button" id="Login" value="Login" />
+  </div>
+  
+  <div class="right">
+    <span class="loginwith">Sign up with<br />social network</span>
+    
+    <button class="social-signin facebook">Sign up with facebook</button>
+    <button class="social-signin google">Sign up with Google+</button>
+  </div>
+  <div class="or">OR</div>
+</div>
+</body>
+</html>
