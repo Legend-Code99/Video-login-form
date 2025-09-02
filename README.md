@@ -6,7 +6,7 @@
 
 3. click downloads and right click on bg video.mp4
 4. click on copy as path
-5. Go yo Video login form.html
+5. Go to Video login form.html
 6. Replace VIDEO_PATH with copied path
 
 <br/><br/>
