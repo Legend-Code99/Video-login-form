@@ -1,11 +1,13 @@
 
 **Steps to get file path.**
-download bg video.mp4
-go to file explorer
-click downloads and right click on bg video.mp4
-click on copy as path
-Go yo Video login form.html
-Replace VIDEO_PATH with copied path.
+<br/>
+1. download bg video.mp4
+2. go to file explorer
 
+3. click downloads and right click on bg video.mp4
+4. click on copy as path
+5. Go yo Video login form.html
+6. Replace VIDEO_PATH with copied path
 
+<br/><br/>
 **Steps above not work if you are using live server**
